@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="chapabets ">
+    <meta http-equiv="cleartype" content="on">
+		<!-- staging -->
+    	<meta name="robots" content="noindex,nofollow"/>
+		<!-- staging -->
+
+		<!-- live -->
+			<!-- <meta name="robots" content="index, follow"> -->
+
+		<!-- live -->
+
+		<title>chapabets</title>
+		<link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="images/favicons/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="images/favicons/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="chapabets"/>
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="images/favicons/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
+		<link rel="stylesheet" href="stylesheets/responsive-nav.css">
+
+    <!-- Google Analytics -->
+		<!-- <script>
+
+		</script> -->
+
+		<script src="javascripts/jquery-3.2.1.min.js"></script>
+    <script src="javascripts/nav-js.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function($) {
+				$('a[href^="#"]').bind('click.smoothscroll', function(e) {
+				e.preventDefault();
+				var target = this.hash;
+
+						$('html, body').stop().animate({
+								'scrollTop' : $(target).offset().top
+						}, 900, 'swing', function() {
+								window.location.hash = target;
+						});
+				});
+			});
+		</script>
+
+
+	</head>
+	<body>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="#">Join Now</a></li>
+        <li><a href="#">How it Works</a></li>
+        <li><a href="#">Tips</a></li>
+        <li><a href="#">Previews</a></li>
+        <li><a href="#">Bookmakers</a></li>
+        <li><a href="#">Bookmakers Offers</a></li>
+      </ul>
+    </nav>
+
+
+
+		<footer>
+
+		</footer>
+
+    <script>
+      var nav = responsiveNav(".nav-collapse", { // Selector
+        animate: true, // Boolean: Use CSS3 transitions, true or false
+        transition: 284, // Integer: Speed of the transition, in milliseconds
+        label: "Menu", // String: Label for the navigation toggle
+        insert: "before", // String: Insert the toggle before or after the navigation
+        customToggle: "", // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative", // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
+        jsClass: "js", // String: 'JS enabled' class which is added to  element
+        init: function(){}, // Function: Init callback
+        open: function(){}, // Function: Open callback
+        close: function(){} // Function: Close callback
+      });
+    </script>
+  </body>
+</html>
