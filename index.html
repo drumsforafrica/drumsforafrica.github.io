@@ -63,12 +63,17 @@
 	</head>
 	<body>
 		<header class="sp-lg main-header">
+			<div class="row">
+				<div class="col c12">
+					<div class="date-wrap">Friday, 1 September 2017 4:22 pm</div>
+				</div>
+			</div>
 			<div class="row sp-vert-sm">
         <div class="col c2">
 					<a href="index.html"><img src="images/chapabets-logo.png"  alt="Chapabets"></a>
 				</div>
         <div class="col c10 main-nav-wrap">
-					<div class="date-wrap">Friday, 1 September 2017 4:22 pm</div>
+					<!-- <div class="date-wrap">Friday, 1 September 2017 4:22 pm</div> -->
 					<nav class="nav-collapse">
 			      <ul id="main-menu">
 			        <li><a href="#" class="active">Join Now</a></li>
@@ -79,6 +84,7 @@
 			        <li><a href="#">Bookmakers Offers</a></li>
 			      </ul>
 			    </nav>
+					<!-- <a href="#" class="nav-toggle" aria-hidden="false">&nbsp;</a> -->
 				</div>
       </div>
     </header>
@@ -103,10 +109,10 @@
       var nav = responsiveNav(".nav-collapse", { // Selector
         animate: true, // Boolean: Use CSS3 transitions, true or false
         transition: 284, // Integer: Speed of the transition, in milliseconds
-        label: "Menu", // String: Label for the navigation toggle
+        label: "", // String: Label for the navigation toggle
         insert: "before", // String: Insert the toggle before or after the navigation
         customToggle: "", // Selector: Specify the ID of a custom toggle
-        closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+        closeOnNavClick: true, // Boolean: Close the navigation when one of the links are clicked
         openPos: "relative", // String: Position of the opened nav, relative or static
         navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
         navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
