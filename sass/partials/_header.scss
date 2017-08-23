@@ -5,7 +5,7 @@
   padding-bottom: 0;
   img {
     max-width: 90%;
-    @media (max-width: 2560px) {
+    @media (min-width: 2560px) {
       max-width: 66%;
     }
     @media (max-width: 1440px) {
@@ -15,6 +15,9 @@
       width: 100%;
       padding-top: 18px;
     }
+    @media(max-width:55em) {
+       max-width: 100%;
+     }
     @media (max-width: 30em) {
       max-width: 100%;
     }
@@ -31,6 +34,9 @@
     letter-spacing: 1px;
     @media (max-width: 1024px) {
       font-size: 10px;
+    }
+    @media(max-width:55em) {
+      font-size: 8px;
     }
   }
 }
