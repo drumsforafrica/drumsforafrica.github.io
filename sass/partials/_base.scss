@@ -1,0 +1,23 @@
+
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities";
+
+// Font weights
+$regular: 400;
+$bold: 700;
+
+// Base Font
+$base-font-family: 'Roboto Slab', serif;
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px;
+    z-index: 0;
+    background: #000000;
+    background-color: #000000;
+    font-family: 'Roboto Slab', serif;
+}
