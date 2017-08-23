@@ -3,29 +3,31 @@
   background-color: $white;
   padding-top: 0;
   padding-bottom: 0;
-  img {
-    max-width: 90%;
-    margin-top: -20px;
-    @media (min-width: 2560px) {
-      max-width: 66%;
-    }
-    @media (max-width: 1440px) {
+  .logo {
+    img {
       max-width: 90%;
-    }
-    @media (max-width: 1024px) {
-      width: 100%;
-      // padding-top: 18px;
-    }
-    @media(max-width:55em) {
-       max-width: 100%;
-     }
-    @media (max-width: 30em) {
-      max-width: 100%;
+      margin-top: -20px;
+      @media (min-width: 2560px) {
+        max-width: 66%;
+      }
+      @media (max-width: 1440px) {
+        max-width: 90%;
+      }
+      @media (max-width: 1024px) {
+        width: 100%;
+        // padding-top: 18px;
+      }
+      @media(max-width:55em) {
+         max-width: 100%;
+       }
+      @media (max-width: 425px) {
+        max-width: 50%;
+      }
     }
   }
   .col {
-    @media (max-width: 30em) {
-      width: 50%;
+    @media (max-width: 425em) {
+      // width: 50%;
     }
   }
   .date-wrap {
@@ -45,10 +47,25 @@
       font-size: 9px;
 
     }
+    @media(max-width:425px) {
+      margin-bottom: 15px;
+    }
     @media(max-width:375px) {
       // font-size: 10px;
-      margin-top: 17px;
+      margin-top: 0;
     }
 
+  }
+  .js .nav-collapse-0.opened {
+    max-height: 230px !important;
+  }
+  @media(max-width:425px) {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse.opened {
+    max-height: none !important;
   }
 }
