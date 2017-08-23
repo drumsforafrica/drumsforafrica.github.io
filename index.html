@@ -36,6 +36,7 @@
 		<meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
 		<meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
 		<meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
+		<link rel="stylesheet" href="stylesheets/responsive-nav.css">
 
     <!-- Google Analytics -->
 		<!-- <script>
@@ -43,6 +44,7 @@
 		</script> -->
 
 		<script src="javascripts/jquery-3.2.1.min.js"></script>
+    <script src="javascripts/nav-js.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function($) {
 				$('a[href^="#"]').bind('click.smoothscroll', function(e) {
@@ -61,10 +63,16 @@
 
 	</head>
 	<body>
-
-		<nav>
-
-		</nav>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="#">Join Now</a></li>
+        <li><a href="#">How it Works</a></li>
+        <li><a href="#">Tips</a></li>
+        <li><a href="#">Previews</a></li>
+        <li><a href="#">Bookmakers</a></li>
+        <li><a href="#">Bookmakers Offers</a></li>
+      </ul>
+    </nav>
 
 
 
@@ -72,6 +80,22 @@
 
 		</footer>
 
-
+    <script>
+      var nav = responsiveNav(".nav-collapse", { // Selector
+        animate: true, // Boolean: Use CSS3 transitions, true or false
+        transition: 284, // Integer: Speed of the transition, in milliseconds
+        label: "Menu", // String: Label for the navigation toggle
+        insert: "before", // String: Insert the toggle before or after the navigation
+        customToggle: "", // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative", // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
+        jsClass: "js", // String: 'JS enabled' class which is added to  element
+        init: function(){}, // Function: Init callback
+        open: function(){}, // Function: Open callback
+        close: function(){} // Function: Close callback
+      });
+    </script>
   </body>
 </html>
