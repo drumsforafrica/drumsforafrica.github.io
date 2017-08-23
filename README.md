@@ -1,4 +1,4 @@
-# Staging area for chapabet
+# Staging area for Chapabets
 * CSS framework based on [Lotus](http://goatslacker.github.io/lotus.css/)
 
 # Set Up
