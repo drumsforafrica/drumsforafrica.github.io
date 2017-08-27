@@ -43,7 +43,7 @@
 		</script> -->
 
 		<script src="javascripts/jquery-3.2.1.min.js"></script>
-    <script src="javascripts/nav-js.min.js"></script>
+		<script src="javascripts/modernizr.custom.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function($) {
 				$('a[href^="#"]').bind('click.smoothscroll', function(e) {
@@ -58,6 +58,20 @@
 				});
 			});
 		</script>
+		<script>
+	    $(document).ready(function(){
+	        $("#nav-mobile").html($("#nav-main").html());
+	        $("#nav-trigger span").click(function(){
+	            if ($("nav#nav-mobile ul").hasClass("expanded")) {
+	                $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+	                $(this).removeClass("open");
+	            } else {
+	                $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+	                $(this).addClass("open");
+	            }
+	        });
+	    });
+	</script>
 
 
 	</head>
@@ -74,7 +88,7 @@
 				</div>
         <div class="col c10 main-nav-wrap">
 					<!-- <div class="date-wrap">Friday, 1 September 2017 4:22 pm</div> -->
-					<nav class="nav-collapse">
+					<!-- <nav class="nav-collapse">
 			      <ul id="main-menu">
 			        <li><a href="#" class="active">Join Now</a></li>
 			        <li><a href="#">How it Works</a></li>
@@ -83,8 +97,22 @@
 			        <li><a href="#">Bookmakers</a></li>
 			        <li><a href="#">Bookmakers Offers</a></li>
 			      </ul>
-			    </nav>
+			    </nav> -->
 					<!-- <a href="#" class="nav-toggle" aria-hidden="false">&nbsp;</a> -->
+				<div id="nav-trigger">
+            <span>Menu</span>
+        </div>
+        <nav id="nav-main">
+					<ul id="main-menu">
+						<li><a href="#" class="active">Join Now</a></li>
+						<li><a href="#">How it Works</a></li>
+						<li><a href="#">Tips</a></li>
+						<li><a href="#">Previews</a></li>
+						<li><a href="#">Bookmakers</a></li>
+						<li><a href="#">Bookmakers Offers</a></li>
+					</ul>
+        </nav>
+        <nav id="nav-mobile"></nav>
 				</div>
       </div>
     </header>
