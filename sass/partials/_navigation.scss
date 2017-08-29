@@ -58,6 +58,9 @@ $color:rgb(200,0,50);
 		@media(max-width:375px) {
 			// top:-33px;
 		}
+		@media(max-width:320px) {
+			top:-30px;
+		}
 
 	}
 }
@@ -171,19 +174,20 @@ nav#nav-mobile {
 		}
 	}
 	#main-menu {
-		margin-top: 20px;
+		margin-top: 0;
 		margin-left: -20px;
 		@media(max-width:425px) {
-			margin-top: -5px;
+			// margin-top: -5px;
+			// margin-top: 0;
 		}
 		@media(max-width:375px) {
-			margin-top: -9px;
+			// margin-top: -9px;
 		}
 		@media(max-width:320px) {
-			margin-top: -12px;
+			// margin-top: -12px;
 		}
 		@media(max-width:300px) {
-			margin-top: -14px;
+			// margin-top: -14px;
 		}
 	}
 }
@@ -215,7 +219,7 @@ section p {
 		// width: 50%;
 		// width: 50%;
 		// float: right;
-		margin-top: 40px;
+		margin-top: 23px;
 	}
 
 	#nav-trigger {
