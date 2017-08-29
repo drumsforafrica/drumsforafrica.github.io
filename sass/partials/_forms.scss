@@ -2,6 +2,7 @@
   background-color: $light-grey;
   padding: 2em;
   width: 80%;
+  margin-top: -40px;
   .headline-sml {
     font-size: 2em;
     text-align: center;
@@ -65,5 +66,8 @@
     &:hover {
       background-color: $light-green;
     }
+  }
+  @media(max-width:1440px) {
+    width: 100%;
   }
 }
