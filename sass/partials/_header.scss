@@ -29,7 +29,7 @@
          max-width: 100%;
        }
       @media (max-width: 425px) {
-        max-width: 80%;
+        max-width: 50%;
       }
     }
     @media all and (max-width: 900px) {
@@ -39,6 +39,7 @@
   .col {
     @media (max-width: 425em) {
       // width: 50%;
+      margin-bottom: 0;
     }
   }
   .date-wrap {
@@ -55,11 +56,16 @@
       font-size: 10px;
     }
     @media(max-width:55em) {
-      font-size: 9px;
+      // font-size: 9px;
 
     }
+    @media (max-width: 900px) {
+      font-size: 11px;
+      display: none;
+    }
     @media(max-width:425px) {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      text-align: center;
     }
     @media(max-width:375px) {
       // font-size: 10px;
@@ -73,12 +79,7 @@
   }
 
   @media(max-width:425px) {
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 40em) {
-  .js .nav-collapse.opened {
-    max-height: none !important;
+    height: 118px;
+    margin-bottom: 0;
   }
 }
