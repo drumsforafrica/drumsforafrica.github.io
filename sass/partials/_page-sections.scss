@@ -1,31 +1,50 @@
 // Homepage start
-  .hero-wrap {
-    color: $white;
-    // width: 33%;
-    text-align: center;
-    // line-height: 1;
-    width: auto;
-    h1 {
-      font-weight: normal;
-      font-size: 2.4em;
-      line-height: 1.35;
-    }
-    h2 {
+.home {
+  background-color: #000000;
+  background-image: url(".././images/home-body-bgd.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: right;
+  @media(max-width:1440px) {
+    background-position: center;
+    background-size: 71%;
+    background-position-x: right;
+  }
 
+}
+.home-wrap {
+    padding-top: 0;
+    .sp-vert-lg {
+      padding-top: 0;
     }
-    h3 {
-      font-size: 3.6em;
-    }
-    .cta-headline {
-      font-size: 7em;
-      text-transform: uppercase !important;
-      font-weight: $bold;
-      line-height: 1;
-      border-top: 1px $white solid;
-      margin-bottom: 0;
-      color: $light-green;
-    }
+}
+.hero-wrap {
+  color: $white;
+  // width: 33%;
+  text-align: center;
+  // line-height: 1;
+  width: auto;
+  h1 {
+    font-weight: normal;
+    font-size: 2.4em;
+    line-height: 1.35;
+  }
+  h2 {
 
   }
+  h3 {
+    font-size: 3.6em;
+  }
+  .cta-headline {
+    font-size: 7em;
+    text-transform: uppercase !important;
+    font-weight: $bold;
+    line-height: 1;
+    border-top: 1px $white solid;
+    margin-bottom: 0;
+    color: $light-green;
+  }
+
+}
 
 // Homepage End
