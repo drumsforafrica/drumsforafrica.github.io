@@ -1,0 +1,31 @@
+// Homepage start
+  .hero-wrap {
+    color: $white;
+    // width: 33%;
+    text-align: center;
+    // line-height: 1;
+    width: auto;
+    h1 {
+      font-weight: normal;
+      font-size: 2.4em;
+      line-height: 1.35;
+    }
+    h2 {
+
+    }
+    h3 {
+      font-size: 3.6em;
+    }
+    .cta-headline {
+      font-size: 7em;
+      text-transform: uppercase !important;
+      font-weight: $bold;
+      line-height: 1;
+      border-top: 1px $white solid;
+      margin-bottom: 0;
+      color: $light-green;
+    }
+
+  }
+
+// Homepage End
