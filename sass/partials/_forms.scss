@@ -9,6 +9,9 @@
     text-transform: uppercase;
     color: $light-green;
     margin-bottom: 0;
+    @media(max-width:1024px) {
+      font-size: 1.563em;
+    }
   }
   .headline-lrg {
     font-size: 2.938em;
@@ -17,6 +20,9 @@
     color: $light-green;
     line-height: 0.875;
     margin-bottom: 0.5em;
+    @media(max-width:1024px) {
+      font-size: 2.35em;
+    }
   }
   .form-label {
     font-size: 1.438em;
