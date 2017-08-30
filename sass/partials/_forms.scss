@@ -67,6 +67,14 @@
       background-color: $light-green;
     }
   }
+  .terms {
+    color: $grey;
+    text-align: center;
+    a {
+      text-decoration: none !important;
+      color: $green;
+    }
+  }
   @media(max-width:1440px) {
     width: 100%;
   }
