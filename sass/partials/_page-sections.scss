@@ -64,4 +64,80 @@
 
 }
 
+// How it works
+.how-it-works {
+  width: 100%;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+  .section-title {
+    color: $light-green;
+    font-size: 1.5em;
+    text-align: center;
+
+  }
+  .steps-wrap {
+    border-top: 1px solid $light-green;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 86%;
+    // text-align: center;
+    ol {
+      list-style: none;
+      counter-reset: li;
+    }
+    li {
+      counter-increment: li;
+    }
+    li::before {
+      content: counter(li);
+      color: $light-green !important;
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: -20px;
+
+    }
+    #step-list {
+      // margin-left: -20px;
+      // list-style-position: outside;
+      // list-style-type: decimal;
+      margin-top: 0;
+
+      &:before {
+        color: $light-green;
+      }
+      li {
+        color: $white;
+        font-size: 1.25em;
+        font-weight: $bold;
+        width: 30%;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        // display: inline-block;
+        &:before {
+          color: $light-green !important;
+        }
+      }
+
+    }
+    // .step {
+    //   width: auto;
+    //   display: inline-block;
+    //   margin-right:15px;;
+    //   span {
+    //     color: $light-green;
+    //     font-size: 1.625em;
+    //     font-weight: $bold;
+    //     margin-right: 7px;
+    //     display: inline;
+    //   }
+    // }
+    // p {
+    //   color: $white;
+    //   font-size: 1.25em;
+    //   font-weight: $bold;
+    //   display: inline;
+    // }
+  }
+}
+
 // Homepage End
