@@ -91,12 +91,16 @@
     padding: 0.65em;
     font-size: 1.5em;
     color: $dark-grey;
+    border: 1px solid $light-green !important;
     @media(max-width:500px) {
       padding: 0.5em;
       font-size: 1.25em;
     }
     @media(max-width:375px) {
       font-size: 1em;
+    }
+    &:focus {
+      border-color: darken($light-green, 20%)!important;
     }
   }
   ::-webkit-input-placeholder {
