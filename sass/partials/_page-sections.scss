@@ -15,10 +15,15 @@
 
 }
 .home-wrap {
+  padding-top: 0;
+  .sp-vert-lg {
     padding-top: 0;
-    .sp-vert-lg {
-      padding-top: 0;
+  }
+  @media(max-width:768px) {
+    .c7 {
+      width: 100%;
     }
+  }
 }
 .hero-wrap {
   color: $white;
@@ -34,6 +39,9 @@
     @media(min-width:1024px) {
       font-size: 1.75em;
     }
+    @media(max-width:768px) {
+      // font-size: 2.188em;
+    }
   }
   h2 {
 
@@ -42,6 +50,9 @@
     font-size: 3.6em;
     @media(min-width:1024px) {
       font-size: 2.688em;
+    }
+    @media(max-width:768px) {
+      // font-size: 2.5em;
     }
   }
   .divider {
@@ -63,6 +74,9 @@
     }
     @media(max-width:1024px) {
       width: 78%;
+    }
+    @media(max-width:768px) {
+      width: 84%;
     }
   }
   .cta-headline {
@@ -165,6 +179,11 @@
           font-size: 0.875em;
           line-height: normal;
         }
+        @media(max-width:768px) {
+          width: 24%;
+          margin-right: 5%;
+          margin-left: 4%;
+        }
       }
       @media(max-width:1024px) {
         margin-left: -5px;
@@ -195,6 +214,9 @@
     @media(max-width:1024px) {
       width: 100%;
     }
+  }
+  @media(max-width:768px) {
+    margin-bottom: 1.5em;
   }
 }
 
