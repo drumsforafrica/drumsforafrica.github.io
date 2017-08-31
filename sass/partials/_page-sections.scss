@@ -45,6 +45,9 @@
     @media(max-width:768px) {
       // font-size: 2.188em;
     }
+    @media(max-width:500px) {
+      font-size: 1.25em;
+    }
   }
   h2 {
 
@@ -56,6 +59,9 @@
     }
     @media(max-width:768px) {
       // font-size: 2.5em;
+    }
+    @media(max-width:500px) {
+      font-size: 1.875em;
     }
   }
   .divider {
@@ -81,6 +87,9 @@
     @media(max-width:768px) {
       width: 84%;
     }
+    @media(max-width:500px) {
+      width: 80%;
+    }
   }
   .cta-headline {
     font-size: 7em;
@@ -91,6 +100,9 @@
     color: $light-green;
     @media(min-width:1024px) {
       font-size: 5.25em;
+    }
+    @media(max-width:500px) {
+      font-size: 3.625em;
     }
   }
 
@@ -186,6 +198,10 @@
           width: 24%;
           margin-right: 5%;
           margin-left: 4%;
+        }
+        @media(max-width:500px) {
+          width: 100%;
+          margin-left: 0;
         }
       }
       @media(max-width:1024px) {
