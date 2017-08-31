@@ -21,6 +21,12 @@
     @media(max-width:375px) {
       font-size: 1.25em;
     }
+    @media(max-width:360px) {
+      font-size: 1em;
+    }
+    @media(max-width:300px) {
+      font-size: 0.75em;
+    }
   }
   .headline-lrg {
     font-size: 2.938em;
@@ -42,6 +48,13 @@
     @media(max-width:375px) {
       font-size: 2em;
     }
+    @media(max-width:360px) {
+      font-size: 1.5em;
+    }
+    @media(max-width:300px) {
+      font-size: 1.125em;
+      margin-bottom: -0.75em;
+    }
   }
   .form-label {
     font-size: 1.438em;
@@ -55,11 +68,18 @@
     @media(max-width:375px) {
       font-size: 1em;
     }
+    @media(max-width:300px) {
+      font-size: 0.75em;
+      margin-bottom: 0;
+    }
   }
   label{
     margin-bottom: 2em;
     @media(max-width:500px) {
       margin-bottom: 1.5em;
+    }
+    @media(max-width:300px) {
+      margin-bottom: 0.75em;
     }
   }
   textarea, input {
@@ -122,6 +142,10 @@
       text-decoration: none !important;
       color: $green;
     }
+    @media(max-width:300px) {
+      font-size: 0.625em;
+      line-height: normal;
+    }
   }
   @media(max-width:1440px) {
     width: 100%;
@@ -132,5 +156,8 @@
   @media(max-width:500px) {
     margin-top: 0;
     padding: 1em;
+  }
+  @media(max-width:300px) {
+    padding: 1em 0.75em;
   }
 }
