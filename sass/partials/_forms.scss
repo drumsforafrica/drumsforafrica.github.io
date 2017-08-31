@@ -12,6 +12,9 @@
     @media(max-width:1024px) {
       font-size: 1.563em;
     }
+    @media(max-width:768px) {
+      font-size: 2.25em;
+    }
   }
   .headline-lrg {
     font-size: 2.938em;
@@ -22,6 +25,9 @@
     margin-bottom: 0.5em;
     @media(max-width:1024px) {
       font-size: 2.35em;
+    }
+    @media(max-width:768px) {
+      font-size: 3.35em;
     }
   }
   .form-label {
