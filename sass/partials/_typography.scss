@@ -1,5 +1,4 @@
-// Base Font
-$base-font-family: 'Roboto Slab', serif;
+
 /* roboto-slab-regular - latin */
 @font-face {
   font-family: 'Roboto Slab';
@@ -30,3 +29,10 @@ $base-font-family: 'Roboto Slab', serif;
 // Font weights
 $regular: 400;
 $bold: 700;
+// Base Font
+$base-font-family: 'Roboto Slab', serif;
+
+body {
+    font-family: $base-font-family;
+    font-family: 'Roboto Slab', serif;
+}
