@@ -8,6 +8,9 @@
     .date {
       text-align: left;
     }
+    tr {
+      background-color: $light-green !important;
+    }
   }
   tbody {
     background-color: $white;
@@ -17,6 +20,7 @@
     .match {
       font-weight: $bold;
     }
+
   }
   table {
     border: 1px solid #ccc;
@@ -31,6 +35,9 @@
   table tr {
     border: 1px solid #ddd;
     padding: 5px;
+    &:nth-child(2n-1) {
+      background-color: #dddddd;
+    }
   }
 
   table th, table td {
@@ -43,7 +50,7 @@
     font-size: 14px;
     letter-spacing: 1px;
   }
-  
+
 
   @media screen and (max-width: 1024px) {
       width: 100%;
@@ -86,8 +93,9 @@
       content: attr(data-th)": ";
       float: left;
       text-transform: uppercase;
-      // font-weight: $bold;
-      font-weight: normal;
+      font-weight: $bold;
+      font-weight: bold;
+      font-size: 12px;
       color: $light-green;
       margin-right: 15px;
     }
