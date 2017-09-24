@@ -1,5 +1,7 @@
 .table-wrap {
   padding-top: 0.5em;
+  width: 72%;
+  margin: 0 auto;
   thead {
     background-color: $light-green;
     color: $white;
@@ -23,6 +25,7 @@
     padding:0;
     border-collapse: collapse;
     border-spacing: 0;
+    font-size: 1.063em;
   }
 
   table tr {
@@ -40,8 +43,13 @@
     font-size: 14px;
     letter-spacing: 1px;
   }
+  
 
+  @media screen and (max-width: 1024px) {
+      width: 100%;
+  }
   @media screen and (max-width: 600px) {
+
     tbody {
       .date {
         text-align: right;
@@ -65,7 +73,7 @@
     table td {
       display: block;
       text-align: right;
-      font-size: 13px;
+      font-size: 15px;
       border-bottom: 1px dotted #ccc;
     }
 
@@ -78,8 +86,10 @@
       content: attr(data-th)": ";
       float: left;
       text-transform: uppercase;
-      font-weight: $bold;
+      // font-weight: $bold;
+      font-weight: normal;
       color: $light-green;
+      margin-right: 15px;
     }
   }
 }
