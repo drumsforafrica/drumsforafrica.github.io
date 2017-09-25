@@ -276,4 +276,8 @@
 // Homepage End
 .cta-wrap {
   text-align: center;
+  margin-top: 2em;
+  @media(max-width:768px) {
+    margin-top: 0;
+  }
 }
