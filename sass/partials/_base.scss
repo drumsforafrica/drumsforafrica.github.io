@@ -21,8 +21,13 @@ body {
     // background-color: #f0f0f0;
     // background: lighten(#cccccc, 14%);
     // background-color: lighten(#cccccc, 14%);
-    background: #EEEEEE;
+    // background: #EEEEEE;
     background-color: #EEEEEE;
+    background: #EEEEEE;
+    @media(max-width:450px) {
+      background-color: #CCCCCC;
+      background: #CCCCCC;
+    }
 }
 
 *,

@@ -43,6 +43,9 @@
     }
   }
   @media(max-width:768px) {
+    h2 {
+      margin-bottom: 0;
+    }
 
     .row {
       .c3, .c4, .c5 {
