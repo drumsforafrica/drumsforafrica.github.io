@@ -91,6 +91,20 @@ background-position-y: bottom;
 
 .bookmaker-content {
 
+  img {
+    width: 100%;
+  }
+  p {
+    font-size: 1.18em;
+    line-height: 1.35;
+  }
+  .row {
+    margin-bottom: 2em;
+  }
+  .intro {
+    font-weight: $bold;
+  }
+
   .logo-container {
     img {
       width: 70%;
@@ -98,7 +112,21 @@ background-position-y: bottom;
     }
   }
 
+  .push-right {
+    display: inline-block;
+  }
 
+  @media(max-width:1024px) {
+    .push-right {
+      display: none;
+    }
+    .photo-container {
+      width: 35%;
+    }
+    .summary {
+      width: 65%;
+    }
+  }
 
   @media(max-width:768px) {
     .logo-container {
@@ -112,6 +140,9 @@ background-position-y: bottom;
         width: 60%;
         margin: 0 20%;
       }
+    }
+  .photo-container, .summary {
+    width: 100%;
     }
   }
 
