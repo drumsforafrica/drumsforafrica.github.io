@@ -1,19 +1,4 @@
 // Homepage start
-.home {
-  background-color: #000000;
-  background-image: url(".././images/home-body-bgd.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  // background-position-x: right;
-  background-position-y: bottom;
-  @media(max-width:1440px) {
-    background-position: center;
-    background-size: 71%;
-    background-position-y: bottom;
-    // background-position-x: right;
-  }
-
-}
 .home-wrap {
   padding-top: 0;
   .sp-vert-lg {
