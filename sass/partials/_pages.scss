@@ -98,4 +98,21 @@ background-position-y: bottom;
     }
   }
 
+
+
+  @media(max-width:768px) {
+    .logo-container {
+      width: 33%;
+    }
+  }
+  @media(max-width:500px) {
+    .logo-container {
+      width: 100%;
+      img {
+        width: 60%;
+        margin: 0 20%;
+      }
+    }
+  }
+
 }
