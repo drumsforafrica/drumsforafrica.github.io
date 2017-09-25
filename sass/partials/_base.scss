@@ -24,8 +24,6 @@ body {
             box-sizing: border-box;
 }
 .general {
-  background: #F0F0F0;
-  background-color: #F0F0F0;
-  background-color: rgb(240,240,240);
-
+  background: lighten(#cccccc, 14%);
+  background-color: lighten(#cccccc, 14%);
 }
