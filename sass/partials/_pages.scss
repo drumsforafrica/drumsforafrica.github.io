@@ -4,11 +4,11 @@ background-image: url(".././images/home-body-bgd.jpg");
 background-repeat: no-repeat;
 background-position: center;
 // background-position-x: right;
-background-position-y: bottom;
+background-position-y: bottom !important;
   @media(max-width:1440px) {
     background-position: center;
     background-size: 71%;
-    background-position-y: bottom;
+    background-position-y: bottom !important;
     // background-position-x: right;
   }
 }
