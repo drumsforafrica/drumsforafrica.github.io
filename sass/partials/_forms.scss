@@ -124,7 +124,7 @@
     width: 100%;
     background-color: $green;
     color: $white;
-    font-size: 1.375em;
+    font-size: 1.5em;
     font-weight: $bold;
     letter-spacing: 2px;
     &:hover {
@@ -145,6 +145,19 @@
     a {
       text-decoration: none !important;
       color: $green;
+    }
+    @media(max-width:300px) {
+      font-size: 0.625em;
+      line-height: normal;
+    }
+  }
+  .cta-text {
+    color: $grey;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    span {
+      color: $light-green;
     }
     @media(max-width:300px) {
       font-size: 0.625em;
