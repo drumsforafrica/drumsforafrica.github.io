@@ -20,6 +20,9 @@
     .match {
       font-weight: $bold;
     }
+    .competition {
+      font-weight: $bold;
+    }
 
   }
   table {
@@ -42,7 +45,7 @@
 
   table th, table td {
     padding: 10px;
-    text-align: center;
+    text-align: left;
   }
 
   table th {
