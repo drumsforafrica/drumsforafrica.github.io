@@ -89,6 +89,94 @@ background-position-y: bottom !important;
   }
 }
 
+.general-content {
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden !important;
+  padding: 0 25px;
+  // h2 {
+  //   line-height: 1.25;
+  //   color: $green;
+  //   text-align: right;
+  //   font-size: 1.75em;
+  // }
+  .photo-container {
+    .caption {
+      font-size: 0.75em;
+      padding-left: 10px;
+    }
+  }
+  img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 1.18em;
+    line-height: 1.35;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .row {
+    padding-bottom: 2.5em;
+    // padding-left: 0;
+  }
+  .intro {
+    font-weight: $bold;
+  }
+  @media(max-width:360px) {
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 0;
+    }
+    .col {
+      margin-bottom: 0.75em;
+    }
+    .row {
+      .c3 {
+        margin-bottom: 1em;
+      }
+    }
+  }
+  @media(max-width:768px) {
+    h2 {
+      margin-bottom: 0;
+    }
+
+    .row {
+      .c3, .c4, .c5 {
+        width: 100%;
+      }
+    }
+    h2 {
+      text-align: left;
+    }
+
+  }
+  @media(max-width:1024px) {
+    img {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .photo-container {
+      .caption {
+        padding-left: 0;
+      }
+    }
+  }
+  @media(max-width:768px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+  // @media(max-width:500px) {
+  //   width: 100%;
+  //   margin: 0 auto;
+  // }
+  // @media(max-width:360px) {
+  //   width: 100%;
+  //   margin: 0 auto;
+  // }
+}
+
 .bookmaker-content {
 
   img {
