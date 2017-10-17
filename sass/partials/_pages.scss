@@ -89,7 +89,7 @@ background-position-y: bottom !important;
   }
 }
 
-.general-content {
+.general-content, .hot-money-content {
   width: 60%;
   margin: 0 auto;
   overflow: hidden !important;
@@ -176,7 +176,16 @@ background-position-y: bottom !important;
   //   margin: 0 auto;
   // }
 }
-
+.hot-money-content {
+  width: 76%;
+  .row {
+    padding-bottom: 0;
+  }
+  @media(max-width:768px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .bookmaker-content {
 
   img {
